@@ -20,9 +20,24 @@
 
 .App-intro {
   font-size: large;
+  display: flex;
+  justify-content: center;
+ 
+}
+.App-block{
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid black;
 }
 
+a{
+  text-decoration: none;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+li{
+  list-style: none;
 }

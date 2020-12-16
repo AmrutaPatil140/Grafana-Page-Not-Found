@@ -6,7 +6,7 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 
 const Home = () => (
   <h1>
-    Hello guys! Let's deal with 404?
+     Let's deal with 404? Page Not Found!
   </h1>
 );
 
@@ -28,17 +28,17 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">React Router Example</h1>
+          <h1 className="App-title">Grafana page Not Found</h1>
         </header>
         <BrowserRouter>
           <div>
-            <p className="App-intro">
-              <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/more">More</Link></li>
-              </ul>
-            </p>
+            <div className="App-intro">
+              
+                <div className="App-block"><Link to="/">Home</Link></div>               
+                <div className="App-block"><Link to="/about">About</Link></div>
+                <div className="App-block"><Link to="/more">More</Link></div>
+            
+            </div>
 
             <Switch>
               <Route path="/" exact component={Home}/>
